@@ -2,7 +2,7 @@ apt-get update -y
 apt-get upgrade -y
 
 # Installazione di MySQL
-export DEBIAN_FRONTEND=noninteractive # Evita richieste di configurazione, usa valori predefiniti
+# export DEBIAN_FRONTEND=noninteractive # Evita richieste di configurazione, usa valori predefiniti
 apt-get install -y mysql-server
 
 # Configurazione del database: creazione di un nuovo utente non root
