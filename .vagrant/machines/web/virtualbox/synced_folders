@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"C:/DatiAllievo/Vagrantfile/website","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/DatiAllievo/Vagrantfile","disabled":false,"__vagrantfile":true}}}

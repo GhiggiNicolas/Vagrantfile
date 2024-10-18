@@ -4,7 +4,7 @@
 Questo progetto utilizza Vagrant per creare due macchine virtuali (VM) basate su **Ubuntu 22.04 LTS (jammy64)**. 
 
 - La VM **"web"** esegue un server web con un framework di backend (PHP, Flask, Node.js, ecc.) e un gestore di database.
-- La VM **"db"** esegue un database MySQL o MariaDB.
+- La VM **"db"** esegue un database MySQL.
 
 Il tutto implementa una rete interna e una rete "host-only". Un'applicazione web si connette al database utilizzando un utente diverso da root, e viene montata automaticamente una cartella condivisa per le pagine del sito.
 
