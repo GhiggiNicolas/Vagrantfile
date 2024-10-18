@@ -6,19 +6,16 @@ Questo progetto utilizza Vagrant per creare due macchine virtuali (VM) basate su
 - La VM **"web"** esegue un server web con un framework di backend (PHP, Flask, Node.js, ecc.) e un gestore di database.
 - La VM **"db"** esegue un database MySQL o MariaDB.
 
-Il tutto è configurato per utilizzare un proxy opzionale e implementa una rete interna e una rete "host-only". Un'applicazione web si connette al database utilizzando un utente diverso da root, e viene montata automaticamente una cartella condivisa per le pagine del sito.
+Il tutto implementa una rete interna e una rete "host-only". Un'applicazione web si connette al database utilizzando un utente diverso da root, e viene montata automaticamente una cartella condivisa per le pagine del sito.
 
 ## Requisiti
 - **Vagrant 2.x**
 - **VirtualBox**
-- Il plugin **vagrant-proxyconf** per la gestione del proxy (installabile con `vagrant plugin install vagrant-proxyconf`)
 
 ## Configurazione
 
 ### Variabili di Configurazione
 Le seguenti variabili sono configurabili nel `Vagrantfile`:
-- **PROXY_URL**: URL del proxy (es. `http://IPPROXY:PORTA`)
-- **PROXY_ENABLE**: Abilitazione del proxy (`true` o `false`)
 - **BASE_INT_NETWORK**: Rete interna tra le macchine virtuali (`10.10.20`)
 - **BASE_HOST_ONLY_NETWORK**: Rete host-only per l'accesso alla VM web dall'host (`192.168.56`)
 - **BOX_IMAGE**: Immagine Vagrant da usare (default: `ubuntu/jammy64`)
@@ -45,8 +42,8 @@ La cartella contenente il codice del sito viene automaticamente montata all'inte
 
 1. Clonare il repository:
     ```bash
-    git clone https://github.com/username/repository.git
-    cd repository
+    git clone https://github.com/GhiggiNicolas/Vagrantfile.git
+    cd Vagrantfile
     ```
 
 2. Modificare le variabili di configurazione nel `Vagrantfile` se necessario.
@@ -75,9 +72,6 @@ La cartella contenente il codice del sito viene automaticamente montata all'inte
     ```
     http://192.168.56.10/adminer
     ```
-
-## Proxy
-Se si utilizza un proxy, impostare le variabili `PROXY_URL` e `PROXY_ENABLE` nel `Vagrantfile`. Il plugin `vagrant-proxyconf` sarà responsabile della configurazione del proxy per le VM.
 
 ## Consegna
 Si richiede di includere nel repository GitHub i seguenti elementi:
