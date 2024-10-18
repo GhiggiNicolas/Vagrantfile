@@ -30,9 +30,9 @@ Le seguenti variabili sono configurabili nel `Vagrantfile`:
 ## Provisioning
 Lo script di provisioning si occupa di:
 - Installare un web server e un framework backend nella VM **web** (ad esempio, PHP, Flask o Node.js).
-- Installare **MySQL** o **MariaDB** nella VM **db**.
+- Installare **MySQL** nella VM **db**.
 - Creare un utente non root per la connessione al database.
-- Installare e configurare **Adminer** o **SQL Buddy** per la gestione del database tramite interfaccia web.
+- Installare e configurare **Adminer** per la gestione del database tramite interfaccia web.
 - Configurare la connessione tra l'applicazione web e il database.
 
 ## Montaggio della cartella del sito

@@ -21,7 +21,6 @@ Vagrant.configure("2") do |config|
         
         # Provisioning della macchina web
         web.vm.provision "shell", inline: <<-SHELL
-            # Aggiornamento del sistema
             apt-get update -y
             apt-get upgrade -y
 
@@ -50,7 +49,6 @@ Vagrant.configure("2") do |config|
         
         # Provisioning della macchina database
         db.vm.provision "shell", inline: <<-SHELL
-            # Aggiornamento del sistema
             apt-get update -y
             apt-get upgrade -y
 
