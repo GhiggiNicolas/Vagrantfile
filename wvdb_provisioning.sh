@@ -10,6 +10,4 @@ mysql -e "CREATE USER 'webuser'@'%' IDENTIFIED BY 'Password&1';"
 mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'webuser'@'%';"
 mysql -e "FLUSH PRIVILEGES;"
 
-# Configurazione del bind address per permettere connessioni remote
-sed -i 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
 systemctl restart mysql
