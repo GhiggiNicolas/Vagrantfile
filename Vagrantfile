@@ -2,7 +2,6 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    # Variabili di configurazione
     BASE_INT_NETWORK = "10.10.20"
     BASE_HOST_ONLY_NETWORK = "192.168.56"
     BOX_IMAGE = "ubuntu/jammy64"
@@ -23,7 +22,7 @@ Vagrant.configure("2") do |config|
         web.vm.provision "shell", path: "vmweb_provisioning.sh"
     end
 
-    # Configurazione VM Database
+    # Configurazione VM db
     config.vm.define "db" do |db|
         db.vm.box = BOX_IMAGE
         db.vm.hostname = "db.m340"
@@ -31,7 +30,7 @@ Vagrant.configure("2") do |config|
         # Configurazione della rete
         db.vm.network "private_network", ip: "#{BASE_INT_NETWORK}.11", virtualbox__intnet: "intnet"
         
-        # Provisioning della macchina database
+        # Provisioning della macchina db
         db.vm.provision "shell", path: "vmdb_provisioning.sh"
     end
 end
