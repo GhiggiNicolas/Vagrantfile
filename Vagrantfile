@@ -31,6 +31,6 @@ Vagrant.configure("2") do |config|
         db.vm.network "private_network", ip: "#{BASE_INT_NETWORK}.11", virtualbox__intnet: "intnet"
         
         # Provisioning della macchina db
-        db.vm.provision "shell", path: "wvdb_provisioning.sh"
+        db.vm.provision "shell", path: "vmdb_provisioning.sh"
     end
 end
