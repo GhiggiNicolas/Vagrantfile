@@ -79,6 +79,13 @@ Si richiede di includere nel repository GitHub i seguenti elementi:
 - Script di provisioning
 - Codice del sito web
 
+##
+Dati accesso a Adminer:
+    ```bash
+    Utente: webuser
+    Password: Password%1
+    ```
+
 ## Autore
 - Nome: **Nicolas Ghiggi**
 - Email: **nicolas.ghiggi@samtrevano.ch**
