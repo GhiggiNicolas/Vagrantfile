@@ -80,10 +80,10 @@ Si richiede di includere nel repository GitHub i seguenti elementi:
 - Codice del sito web
 
 ## Dati accesso a Adminer:
-    ```bash
-    Utente: webuser
-    Password: Password%1
-    ```
+```bash
+Utente: webuser
+Password: Password%1
+```
 
 ## Autore
 - Nome: **Nicolas Ghiggi**
