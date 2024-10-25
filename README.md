@@ -68,7 +68,7 @@ La cartella contenente il codice del sito viene automaticamente montata all'inte
     http://192.168.56.10
     ```
 
-7. L'interfaccia di gestione del database (Adminer o SQL Buddy) sarà accessibile all'indirizzo:
+7. L'interfaccia di gestione del database (Adminer) sarà accessibile all'indirizzo:
     ```
     http://192.168.56.10/adminer
     ```
