@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
         # Provisioning della macchina web
         web.vm.provision "shell", path: "vmweb_provisioning.sh"
 
-        config.vm.provider "virtualbox" do |vb|
+        web.vm.provider "virtualbox" do |vb|
             vb.name = "web.m340"
             vb.memory = "2048"
             vb.cpus = 2
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
         # Provisioning della macchina db
         db.vm.provision "shell", path: "vmdb_provisioning.sh"
 
-        config.vm.provider "virtualbox" do |vb|
+        db.vm.provider "virtualbox" do |vb|
             vb.name = "db.m340"
             vb.memory = "2048"
             vb.cpus = 2
